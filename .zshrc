@@ -13,6 +13,8 @@ alias ip="ip --color=auto"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+
 function noteto {
    cd ~/Documents/notes/primary_zk
    zk edit -i
@@ -407,3 +409,6 @@ fi
 # eval "$(zoxide init zsh)"
 #set up copy alias
 alias copy="xclip -selection clipboard"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform

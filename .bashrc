@@ -2,7 +2,8 @@ alias ls='ls --color=auto'
 #
 # /etc/bash.bashrc
 #
-#
+
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 
 #gpg signs on the terminal
 export GPG_TTY=$(tty)
@@ -48,3 +49,5 @@ git () {
 		command git "$@"
 	fi
 }
+
+complete -C /usr/bin/terraform terraform

@@ -1,7 +1,9 @@
 alias ls='ls --color=auto'
 #
 # /etc/bash.bashrc
-#
+
+
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
