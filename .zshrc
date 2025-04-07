@@ -206,8 +206,7 @@ git () {
 		command git log --oneline --graph "${@:2}";
 	elif [ "$1" = "login" ]
 	then
-		command ssh-add ~/.keys/git_ssh_key
-		command ssh-add ~/.ssh/droplet
+      find ~/.keys/git_login_keys/ -type l -exec ssh-add {} +
 	elif [ "$1" = "it" ]
 	then
 		command git add -A; git commit
