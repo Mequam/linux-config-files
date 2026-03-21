@@ -1,0 +1,43 @@
+# https://www.gnu.org/software/stow/manual/stow.html
+# https://www.gnu.org/software/stow/manual/html_node/Types-And-Syntax-Of-Ignore-Lists.html
+# based on [@stephansama's dotfiles](https://github.com/stephansama/stephansama/blob/258443bc5bdd1c26f509e768a6f53159ecb28d76/.stow-local-ignore)
+
+RCS
+.+,v
+
+CVS
+\.\#.+       # CVS conflict files / emacs lock files
+\.cvsignore
+
+\.svn
+_darcs
+\.hg
+
+\.git
+\.gitignore
+\.gitmodules
+
+.+~          # emacs backup files
+\#.*\#       # emacs autosave files
+
+# directory containing more customized configs
+^\.github
+^/custom
+^/docs
+
+^/.*\.md
+\.md
+
+^/.config/.*md
+
+(^|/)install$
+(^|/)LICENSE$
+(^|/)README*$
+
+^/COPYING
+^/Brewfile
+^/LICENSE
+^/Makefile
+^/submodule.sh
+.editorconfig
+
