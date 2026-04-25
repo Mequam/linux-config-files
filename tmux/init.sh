@@ -1,2 +1,2 @@
 #!/bin/bash
-patch -d ./.tmux/plugins/tmux-fzf/ ./.tmux/plugins/tmux-fzf.patch
+patch -d ./.tmux/plugins/tmux-fzf/ <./.tmux/plugins/tmux-fzf.patch
