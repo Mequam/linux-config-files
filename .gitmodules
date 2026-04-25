@@ -10,3 +10,6 @@
 [submodule "awesome/.config/awesome"]
 	path = awesome/.config/awesome
 	url = https://github.com/Mequam/awesome-config.git
+[submodule "dotfiles"]
+	path = dotfiles
+	url = https://github.com/Mequam/dotfiles.git
