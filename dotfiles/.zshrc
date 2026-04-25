@@ -129,7 +129,7 @@ alias samgob='noglob samgob'
 alias fzcd="cd \$(ls | fzf)"
 
 function Pcd {
-   if SELECTION=$(ls ~/ProgramingWorkshop | fzf --tmux=center | tr -d ' '); then
+   if SELECTION=$(find ~/ProgramingWorkshop -maxdepth 2 | rev | cut -d/ -f1-2 | rev | fzf --tmux=center); then
       if echo $SELECTION | grep '^.*-tree$' >/dev/null 2>/dev/null; then
          devPath=$(echo ~/ProgramingWorkshop/$SELECTION/develop)
          echo "$devPath END"
