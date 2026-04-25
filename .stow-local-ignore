@@ -34,11 +34,9 @@ _darcs
 (^|/)LICENSE$
 (^|/)README*$
 
-^/initilize.sh
 ^/COPYING
 ^/Brewfile
 ^/LICENSE
 ^/Makefile
 ^/submodule.sh
 .editorconfig
-
