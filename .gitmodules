@@ -1,0 +1,6 @@
+[submodule "tmux/.tmux/plugins/tmux-fzf"]
+	path = tmux/.tmux/plugins/tmux-fzf
+	url = https://git::@github.com/sainnhe/tmux-fzf
+[submodule "tmux/.tmux/plugins/tpm"]
+	path = tmux/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm

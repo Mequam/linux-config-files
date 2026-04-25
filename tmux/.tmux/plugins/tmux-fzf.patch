@@ -1,0 +1,12 @@
+diff --git a/main.tmux b/main.tmux
+index 133c987..d6367e9 100755
+--- a/main.tmux
++++ b/main.tmux
+@@ -6,5 +6,6 @@ if [ -x "$(command -v copyq)" ]; then
+   copyq &>/dev/null &
+ fi
+ 
+-[ -z "$TMUX_FZF_LAUNCH_KEY" ] && TMUX_FZF_LAUNCH_KEY="F"
++[ -z "$TMUX_FZF_LAUNCH_KEY" ] && TMUX_FZF_LAUNCH_KEY="f"
+ tmux bind-key "$TMUX_FZF_LAUNCH_KEY" run-shell -b "$CURRENT_DIR/main.sh"
++tmux bind-key w run-shell -b "$CURRENT_DIR/scripts/session.sh switch"
