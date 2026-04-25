@@ -7,3 +7,6 @@
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
 	url = https://github.com/Mequam/nvim-config.git
+[submodule "awesome/.config/awesome"]
+	path = awesome/.config/awesome
+	url = https://github.com/Mequam/awesome-config.git
